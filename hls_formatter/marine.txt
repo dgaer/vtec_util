@@ -1,0 +1,16 @@
+
+<!-- BEGIN BLOCK1 -->
+<script language="javascript" type="text/javascript">
+<!--
+
+var HasAllZonesMessage = false;
+
+function VTECGetText(zonenumber) { 
+  HasCaptionMessage = false;
+  CaptionMessage = DefaultCaptionMessage;
+}
+
+// -->
+</script>
+
+<!-- END BLOCK1 -->

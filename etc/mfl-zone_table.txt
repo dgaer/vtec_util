@@ -1,0 +1,64 @@
+#
+# zone_table.txt
+#
+
+#
+# Line syntax:
+#
+# ZONE | Name | Area Number
+#
+# Field descriptions:
+# ZONE = Zone of county code int AAA000 format
+# Name = name for this zone or county as it will appear in the warning table
+# Area number = user-defined number used to bind the zone to the area
+# NOTE: The area number is mapped to a name in the area_table.txt file
+
+# Inland zones and counties for MFL
+# Add your table entries here
+
+FLZ063 | Glades | 1 
+FLC043 | Glades | 1
+FLZ066 | Hendry | 1
+FLC051 | Hendry | 1
+FLZ069 | C Collier | 1
+FLC021 | C Collier | 1
+FLZ070 | I Collier | 1
+FLC021 | I Collier | 1
+FLZ067 | I PBeach | 1
+FLC099 | I PBeach | 1
+FLZ068 | M PBeach | 1
+FLC099 | M PBeach | 1
+FLZ168 | C PBeach | 1
+FLC099 | C PBeach | 1
+FLZ071 | I Broward | 1
+FLC011 | I Broward | 1
+FLZ072 | M Broward | 1
+FLC011 | M Broward | 1
+FLZ172 | C Broward | 1
+FLC011 | C Broward | 1
+FLZ073 | I Miami | 1
+FLC086 | I Miami | 1
+FLZ074 | M Miami | 1
+FLC086 | M Miami | 1
+FLZ173 | C Miami | 1
+FLC086 | C Miami | 1
+FLZ174 | S Miami | 1
+FLC086 | S Miami | 1
+FLZ075 | M Monroe | 1
+FLC087 | M Monroe | 1
+
+# Atlantic Marine zones
+AMZ650 | PB Nearshore | 2
+AMZ670 | PB Offshore | 2
+AMZ651 | MIA/Broward Nearshore | 2
+AMZ671 | MIA/Broward Offshore | 2
+AMZ610 | Lake Okee | 2
+AMZ630 | Bis. Bay | 2
+
+# Gluf waters Marine zones
+GMZ656 | Collier Nearshore | 3
+GMZ676 | Collier Offshore | 3
+GMZ657 | M Monroe Nearshore |3 
+
+
+

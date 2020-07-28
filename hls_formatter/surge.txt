@@ -1,0 +1,64 @@
+
+<!-- BEGIN BLOCK1 -->
+<script language="javascript" type="text/javascript">
+<!--
+
+var HasAllZonesMessage = false;
+
+var VTECSegmentText = new Array();
+VTECSegmentText[0] = Array('\
+CURRENT STORM SURGE VALUES WERE ESTIMATED TO BE 7 TO 9 FEET BETWEEN\n\
+SABINE PASS AND CAMERON...AND 2 TO 6 FEET BETWEEN INTRACOASTAL\n\
+CITY AND CYPREMORT POINT. THESE VALUES ARE EXPECTED TO CONTINUE TO FALL\n\
+THROUGH SLOWLY THROUGH THIS EVENING.');
+
+var VTECZoneListSegment = new Array();
+VTECZoneListSegment[0] = new Array("LAZ051", "LAZ052", "LAZ053", "LAZ054", "TXZ215");
+
+function VTECGetText(zonenumber) { 
+  HasCaptionMessage = false;
+  CaptionMessage = DefaultCaptionMessage;
+
+  var text = "";
+  var numzonelists = VTECZoneListSegment.length;
+
+  var i, j;
+  for(i = 0; i < numzonelists; i++) {
+     var n = VTECZoneListSegment[i].length;
+     for(j = 0; j < n; j++) {
+      if(VTECZoneListSegment[i][j] == zonenumber) {
+        HasCaptionMessage = true;
+	text += VTECSegmentText[i];
+	break;
+      }
+    }
+  }
+
+  if(HasCaptionMessage) CaptionMessage = text;
+
+}
+
+// -->
+</script>
+
+<!-- END BLOCK1 -->
+<STRONG>
+<P>
+...STORM SURGE AND STORM TIDE...<BR>
+EXPECTED CONDITIONS AND IMPACTS FOR THE FOLLOWING AREAS:<BR>
+</P>
+</STRONG>
+<HR>
+<STRONG>
+<A NAME="LAZ051" ID="LAZ051"></A><A NAME="LAZ052" ID="LAZ052"></A><A NAME="LAZ053" ID="LAZ053"></A><A NAME="LAZ054" ID="LAZ054"></A><A NAME="TXZ215" ID="TXZ215"></A>CAMERON, IBERIA, JEFFERSON, ST. MARY, VERMILION
+</STRONG>
+<FONT COLOR="BLACK">
+<PRE>
+CURRENT STORM SURGE VALUES WERE ESTIMATED TO BE 7 TO 9 FEET BETWEEN
+SABINE PASS AND CAMERON...AND 2 TO 6 FEET BETWEEN INTRACOASTAL
+CITY AND CYPREMORT POINT. THESE VALUES ARE EXPECTED TO CONTINUE TO FALL
+THROUGH SLOWLY THROUGH THIS EVENING.
+</PRE>
+</FONT>
+<HR>
+

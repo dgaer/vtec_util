@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- ******************************* -->
+<!-- ******** Start of File ******** -->
+<!-- ******************************* -->
+<!-- *********************************************************** -->
+<!-- HTML File Name: TORMFL-0018S1.html -->
+<!-- Supported Browsers: Internet Explorer, Firefox, Mozilla, Netscape -->
+<!-- Produced by: VTEC text product utility version 2.37 -->
+<!-- File Creation Date: meta data.created  -->
+<!-- Date Last Modified: meta data.reviewed -->
+<!-- *********************************************************** -->
+<!-- ************* Page Description and Details **************** -->
+<!-- *********************************************************** -->
+<!-- NWS MIAMI FL - Warning Polygon Map -->
+<!-- *********************************************************** -->
+<html>
+<head>
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>NWS MIAMI FL - Warning Polygon Map</title>
+<meta name="DC.title" content="NWS MIAMI FL - Warning Polygon Map">
+<meta name="DC.description" content="NWS MIAMI FL - Warning Polygon Map">
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service">
+<meta name="DC.publisher" content="NOAA's National Weather Service">
+<meta name="DC.contributor" content="National Weather Service">
+<meta name="DC.date.created" scheme="ISO8601" content="2008-06-02">
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2008-06-02">
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+<meta name="keywords" content="NWS MIAMI FL - Warning Polygon Map">
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php">
+<meta name="rating" content="General">
+<meta name="robots" content="index,follow">
+<meta name="Distribution" content="Global">
+<meta name="Revisit-after" content="1 month">
+<meta name="robots" content="all">
+</head>
+<body bgcolor="#ffffff" link="#0000ff" vlink="#800080">
+
+<!-- *********************************************************** -->
+<!-- ********* Start of JavaScript code for Google maps ******** -->
+<!-- *********************************************************** -->
+<!-- BEGIN BLOCK1 -->
+<script src="http://maps.google.com/maps?oe=utf-8&amp;file=api&amp;v=2&amp;key=ABQIAAAAIoZKb9JrajP0IwKLFr335hTsk_juWuwt_LNtOqByAr93uT9HuRTzovVKWJSi3TQGBPsWMWPyWdIQdg&amp;client=gme-noaa" type="text/javascript"></script>
+<script src="http://www.srh.noaa.gov/ridge/kml/gmap-wms_keith2.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function load() {
+var WMS_URL_GAL="http://gis.srh.noaa.gov/wmsconnector/com.esri.wms.Esrimap?ServiceName=Ridge";
+var rad = createWMSSpec(WMS_URL_GAL, "Radar", "Radar", "Radar", "default", "image/gif");
+var G_MAP_RIDGE_SPEC = createWMSOverlaySpec(G_MAP_TYPE, rad, "Radar", "Radar");
+var mapOpts = {
+ draggableCursor:"default",
+ draggingCursor:"default"
+}
+ if (GBrowserIsCompatible()) {
+  var map = new GMap2(document.getElementById("map"), mapOpts);
+  var baseIcon = new GIcon();
+      baseIcon.iconSize=new GSize(32,32);
+      baseIcon.iconAnchor=new GPoint(16,32);
+      baseIcon.infoWindowAnchor=new GPoint(16,0);
+  var blank = new GIcon(baseIcon, "http://maps.google.com/mapfiles/kml/pal2/icon15.png", null);
+  map.addMapType(G_MAP_TYPE);
+  map.addMapType(G_SATELLITE_TYPE);
+  map.addMapType(G_MAP_RIDGE_SPEC);
+  map.enableContinuousZoom();
+  map.enableDoubleClickZoom();
+  map.addControl(new GLargeMapControl());
+  map.addControl(new GMapTypeControl());
+  map.addControl(new GScaleControl());
+  map.addControl(new GOverviewMapControl());
+  map.setCenter(new GLatLng(26.292, -80.249), 9, G_MAP_TYPE);
+ }
+ var polygon = new GPolygon([new GLatLng(26.17, -80.15), new GLatLng(26.1, -80.19), new GLatLng(26.15, -80.34), new GLatLng(26.22, -80.48), new GLatLng(26.41, -80.41), new GLatLng(26.41, -80.29), new GLatLng(26.4, -80.23), new GLatLng(26.39, -80.18), new GLatLng(26.36, -80.1), new GLatLng(26.31, -80.12), new GLatLng(26.17, -80.15)], "#ff0000", 5, .5, "#ff0000");
+ map.addOverlay(polygon);
+ var polyline = new GPolyline([new GLatLng(26.28, -80.35), new GLatLng(26.2443, -80.2459)], "blue", 5, .5);
+ map.addOverlay(polyline);
+ var polyline2 = new GPolyline([new GLatLng(26.2443, -80.2459), new GLatLng(26.2893, -80.2679)], "blue", 5, .5);
+ map.addOverlay(polyline2);
+ var polyline3 = new GPolyline([new GLatLng(26.2443, -80.2459), new GLatLng(26.2224, -80.2909)], "blue", 5, .5);
+ map.addOverlay(polyline3);
+ var marker = new GMarker(new GLatLng(26.292, -80.249), blank);
+ map.addOverlay(marker);
+ marker.openInfoWindowHtml("<span style='font:8pt courier;color:#ff0000;'><b>TORNADO WARNING</b><br></span><span style='font:8pt courier'>Issued at 319 PM EDT SUN MAR 23 2008<br>Valid until 3:45 PM EDT<br></span><span style='font:8pt courier;color:green;'>Text appears below map</span>");
+ GEvent.addListener(marker, "click", function() {
+  marker.openInfoWindowHtml("<span style='font:8pt courier;color:#ff0000;'><b>TORNADO WARNING</b><br></span><span style='font:8pt courier'>Issued at 319 PM EDT SUN MAR 23 2008<br>Valid until 3:45 PM EDT<br></span><span style='font:8pt courier;color:green;'>Text appears below map</span>");
+ });
+};
+//]]>
+</script>
+<!-- END BLOCK1 -->
+
+<!-- *********************************************************** -->
+<!-- ********** End of JavaScript code for Google maps ********* -->
+<!-- *********************************************************** -->
+
+
+<!-- Page Content Starts Here -->
+
+<font color="red"><H1>NOTICE: Product has expired</H1></font>
+
+<font color="red"><H2>Page posted for archiving and testing only</H2></font>
+<span style="font:8pt arial;color:red;"><b>DISCLAIMER:</b>&nbsp; The map portion of the following product is experimental and may not always be available.</span><br>
+<div id="map" style="width:525px;height:350px;border:solid 1px black;"></div>
+<!-- BEGIN BLOCK2 -->
+
+<!-- Load the Google map -->
+<script language="javascript">
+<!--
+window.onload = load();
+// -->
+</script>
+
+<!-- END BLOCK2 -->
+
+<font color="red"><H1>PRODUCT EXPIRED!!!</H1></font>
+<pre>TORMFL
+
+NATIONAL WEATHER SERVICE MIAMI FL
+TORNADO WARNING
+319 PM EDT SUN MAR 23 2008
+
+FLC011-099-231945-
+/O.NEW.KMFL.TO.W.0018.080323T1919Z-080323T1945Z/
+
+BULLETIN - EAS ACTIVATION REQUESTED
+TORNADO WARNING
+NATIONAL WEATHER SERVICE MIAMI FL
+319 PM EDT SUN MAR 23 2008
+
+THE NATIONAL WEATHER SERVICE IN MIAMI HAS ISSUED A
+
+<span style='color:black;font-weight:bold;'>* TORNADO WARNING FOR...
+  NORTHEASTERN BROWARD COUNTY IN SOUTH FLORIDA.
+  SOUTH CENTRAL PALM BEACH COUNTY IN SOUTH FLORIDA.
+
+</span><span style='color:black;font-weight:bold;'>* UNTIL 345 PM EDT
+
+</span><span style='color:black;font-weight:bold;'>* AT 319 PM EDT...NATIONAL WEATHER SERVICE DOPPLER RADAR INDICATED A
+  SEVERE THUNDERSTORM CAPABLE OF PRODUCING A TORNADO 7 MILES WEST OF
+  CORAL SPRINGS...MOVING EAST AT 25 MPH.
+
+</span>  THIS STORM IS ALSO CAPABLE OF PRODUCING QUARTER SIZE HAIL...AND
+  DAMAGING WINDS IN EXCESS OF 60 MPH.
+
+<span style='color:black;font-weight:bold;'>* THE TORNADO WILL BE NEAR...
+
+</span>  CORAL SPRINGS AND PARKLAND BY 330 PM EDT.
+  TAMARAC BY 335 PM EDT.
+  MARGATE...NORTH LAUDERDALE...AND COCONUT CREEK BY 340 PM EDT.
+  
+
+AND SURROUNDING COMMUNITIES.
+
+WHEN A TORNADO WARNING IS ISSUED BASED ON DOPPLER RADAR...IT MEANS
+THAT STRONG ROTATION HAS BEEN DETECTED IN THE STORM. A TORNADO MAY
+ALREADY BE ON THE GROUND...OR COULD POSSIBLY DEVELOP ANYTIME. IF YOU
+ARE IN THE PATH OF THIS DANGEROUS STORM...MOVE INDOORS AND TO THE
+LOWEST LEVEL OF THE BUILDING. STAY AWAY FROM WINDOWS. IF DRIVING...DO
+NOT SEEK SHELTER UNDER A HIGHWAY OVERPASS.
+
+DO NOT USE HIGHWAY OVERPASSES FOR SHELTER. OVERPASSES DO NOT PROVIDE
+PROTECTION FROM TORNADIC WINDS. VEHICLES STOPPED UNDER BRIDGES BLOCK
+TRAFFIC AND PREVENT PEOPLE FROM GETTING OUT OF THE STORM'S PATH AND
+TO SHELTER. IF YOU CANNOT DRIVE AWAY FROM THE TORNADO...GET OUT OF
+YOUR VEHICLE AND LIE FLAT IN A DITCH AS A LAST RESORT.
+
+
+</pre>
+
+<font color="red"><H1>NOTICE: Product has expired</H1></font>
+
+<font color="red"><H2>Page posted for archiving and testing only</H2></font>
+<!-- Page Content Ends Here -->
+
+</body>
+</html>
+<!-- *********************************************************** -->
+<!-- ******************************* -->
+<!-- ********* End of File ********* -->
+<!-- ******************************* -->

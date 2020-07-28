@@ -1,0 +1,22 @@
+#
+# area_table.txt
+#
+# Area table used with the zone_table.txt file to map a zone number or
+# FIPS code to a geographic area number. 
+#
+# Line syntax:
+# AREA NUMBER | AREA NAME 
+#
+# Field descriptions:
+# Area Number = User-defined number used to bind the zone to the area 
+# Area Name = Name used to describe the area
+
+
+# Start of table for MFL
+# Add your table entries here
+#0 | NONE
+1 | South Florida Land Areas
+2 | Atlantic Waters
+3 | Gulf Waters
+
+

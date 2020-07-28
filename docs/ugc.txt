@@ -1,0 +1,413 @@
+ 
+The Universal Geographic Code (UGC) is a site specific identifier used
+for warnings, watches, forecasts, and any other products needing
+geographic coding to assist in site-specific distribution. The
+"existing UGC" will be phased out by the National Weather Service and
+will be replaced by a "new UGC" which will be consistent with the
+ability of weather products to identify more localized areas within a
+county to which the forecast/warning applies. This section describes
+the characteristics of both the "existing UGC" and the "new UGC."
+
+In the existing UGC, the format consists of 6 alphanumeric characters
+followed by a purge date/time in UTC. Each code group (including
+date/time) is ended by a dash (-). There are two variations to the
+code: one version uses a "C" for the third character and is for
+products issued on a county-by-county basis (mainly short-fused
+warnings); the other uses a "Z" for the third character, and is for
+products issued for unique NWS zone(s) or for part or all of a
+state(s).
+
+
+Explanation of UGC Code Elements
+
+SSCNNN-DDHHMM- For Short -Fuse Warnings and follow-up Severe Local
+Storm Watch Area Outlines (by county redefinition); 
+
+or
+
+SSZNNN-DDHHMM- For Severe Local Storm Watches, Longer-Fuse Watches and
+Warnings, Public Forecast, Marine Forecasts and Warnings, etc. 
+
+where:
+
+SS is the Two letter state or Great Lakes I.D.
+
+C indicates that the number NNN that follows represents a county or
+independent city, or 
+
+Z The NNN that follows represents a unique NWS zone (land or water) or
+part or all of a state (or Great Lake). 
+
+NNN (After "C"), the number of the county/city(1), or
+
+(After "Z"), the number of the zone or part or all of a state(2)
+
+DD is the purge Date (UTC)
+
+HH Is the purge hour (UTC)
+
+MM is the purge Minutes (UTC)
+
+- is the code separator/end of address
+
+C.12.4.2.3 Examples of Warnings in the existing UGC
+
+(A) Examples For Individual Counties/Cities
+
+Code County/City
+
+(1) MEC003- Aroostook County, Maine
+
+(2) KYC101- Henderson County, Kentucky
+
+(3) C0C041- El Paso, Colorado
+
+(4) VAC760- Richmond, Virginia (politically independent city)
+
+(5) MOC510- St. Louis, Missouri (politically independent city)
+
+(B) More Than One County In Same State
+
+If a warning is for more than one county in the same state, the
+appropriate county number(s) will be added (with each group separated
+by a dash). Note that the "SSC" does not need to proceed each county
+number set after the first grouping. 
+
+Also, the county number sets do not have to be in numerical sequence.
+
+Example:
+
+ILC043-089-031-191650- Warning for DuPage, Kane and Cook Counties,
+Illinois; expires on 19th of the month at 1650 UTC. 
+
+(C) County(s) In More Than One State
+
+If a warning is for counties in more than one state, the appropriate
+state I.D. and county numbers will be added. 
+
+Example
+
+SDC127-NEC043-173-IAC193-149-040030- Warning for Union County, South
+Dakota; Gakota and Thurston Counties, Nebraska; and Woodbury and
+Plymouth Counties, Iowa; expires on the 4th of the month at 0030 UTC> 
+
+Severe storm watches issued by the SPC cover large areas, frequently
+containing (parts of) several states. Since so many counties would be
+involved in using the "C" form, watches, instead, will use the "Z"
+form of the geographic code, allowing large areas to be encompassed in
+one code grouping. (Severe Local Storm Watch Area Outlines issued by
+local offices after the SPC watch, list counties and use the "C"
+form.) 
+
+For implementation of the code in watches, the NNN following the "Z"
+will be three zeros "000". The SSZ000 is used to designate any part or
+all of a state which falls within the watch area. 
+
+(A) Examples Of Codes For Individual States
+
+Code State
+
+(1) CAZ000- (All or any part of) California
+
+(2) TXZ000- (All or any part of) Texas
+
+(3) VAZ000- (All or any part of) Virginia
+
+(B) Examples Of Actual Code For More Than One State
+
+SCZ000-GAZ000-FLZ000-160200- Watch area encompasses (all or parts of)
+South Carolina, Georgia, and Florida, and expires on the 16th of the
+month at 0200 UTC (10 PM EDT on the 15th). 
+
+Note that the code will not refer to coastal waters. The phrase "And
+Adjacent Coastal Waters," however, will be found in the text of the
+Watch, as appropriate. 
+
+(C) The Great Lakes will be Coded
+
+Code State
+
+(1) LSZ000- (All or any part of) Lake Superior
+
+(2) LMZ000- (All or any part of) Lake Michigan
+
+(3) LHZ000- (All or any part of) Lake Huron
+
+(4) LEZ000- (All or any part of) Lake Erie
+
+(5) LOZ000- (All or any part of) Lake Ontario
+
+Example including Great Lakes:
+
+WIZ000-MIZ000-LSZ000-LMZ000-022315-
+
+Watch area encompasses ( all or parts of) Wisconsin, Michigan, and
+(all or parts of) Lake Superior and Lake Michigan; expires on the 2nd
+of the month at 2315 UTC (615 PM CDT). 
+
+C.12.4.2.5 Existing Universal Geographic Code Placement
+
+The composition and total number of lines of the communication headers
+of Warnings and Watches (and any other messages) will vary according
+to the circuits through which they are disseminated, e.g., Family of
+Services, NOAA Weather Wire Service (NWWS), etc. 
+
+The placement of the UGC code will occur in either of two formats:
+
+(1) For those products that contain only one narrative text (e.g.,
+    warnings, watches, statements, and certain state [1- 5 days]
+    forecasts, etc.), the UGC code will always be found immediately
+    after the WMO line of the communications header (see examples). 
+
+(2) For those products that contain two or more narrative texts under
+    one AFOS/WMO identifier (e.g., zone, short term, marine,
+    forecasts, and certain state forecasts), the UGC code will be
+    found not after the WMO line as in (1) above, but a separate UGC
+    code will be found immediately before each narrative text with a
+    $$ (double dollar sign) immediately following each narrative
+    text. 
+ 
+Sample Warning Message
+ 
+ 
+AFOS** 				STLSVRMCI
+WMO(DUMMY) 			TTAA,AXX(B KMCI 251531
+UGC CODE 				KSC103-209-MOCO47-165-251600-
+BLANK LINE
+MND LINES 				BULLETIN-IMMEDIATE BROADCAST REQUESTED
+					SEVERE THUNDERSTORM WARNING
+					NATIONAL WEATHER SERVICE KANSAS CITY M0
+					1029 AM CDT TUE JUN 25 1985
+				
+BLANK LINE
+WARNING STATEMENT 		THE NATIONAL WEATHER SERVICE HAS
+ISSUED A SEVERE THUNDERSTORM WARNING EFFECTIVE UNTIL 1100 AM CDT FOR
+PEOPLE IN THE FOLLOWING COUNTIES OF 
+
+BLANK LINE
+COUNTIES AFFECTED 		NORTHEAST KANSAS...EASTERN LEAVENWORTH ...
+					AND WYANDOTTE
+					WEST CENTRAL MISSOURI...WESTERN CLAY...AND PLATTE
+BLANK LINE
+BASIS FOR WARNING ETC. 	AT 1025 AM CDT...RADAR SHOWED A LINE OF SEVERE
+THUNDERSTORM FROM...REST OF TEXT... 
+ 
+ 
+ 
+
+Sample Watch Message
+ 
+ 
+AFOS 	MKCSEL2
+WMO 	TTAA,AXX(B KMKC 301701
+UGC CODE 	NEZ000-KSZ000-MOZ000-IAZ000-ILZ000-010023-
+BLANK LINE
+MND LINES BULLETIN-IMMEDIATE BROADCAST REQUESTED
+	TORNADO WATCH NUMBER 992
+STORM PREDICTION CENTER, NORMAN, OK
+1201 PM CDT MON SEP 30 1985
+BLANK LINE
+TEXT 	THE STORM PREDICTION CENTER HAS ISSUED A TORNADO WATCH FOR
+PORTIONS OF EASTERN NEBRASKA NORTHEASTERN KANSASNORTHERN AND CENTRAL
+MISSOURI SOUTHERN IOWAEXTREME WEST CENTRAL ILLINOIS FROM 415 PM CDT
+UNTIL 723 PM CDT THIS MONDAY AFTERNOON AND EVENING. 
+	TORNADOES...LARGE HAIL...DANGEROUS LIGHTNING AND DAMAGING
+	THUNDERSTORM WINDS ARE POSSIBLE IN THESE AREAS. 
+	THE TORNADO WATCH AREA IS ALONG AND 70 STATUTE MILES EITHER
+	SIDE OF A LINE FROM GRAND ISLAND NEBRASKA TO SAINT LOUIS
+	MISSOURI. 
+  
+C.12.4.2.5.2 Example of UGC Placement Format 2: Sample Public Zone Forecast Product
+AFOS** 	BOSZFPRI
+WMO(DUMMY) 	TTAA,AXX(B KBOS 170800
+BLANK LINE
+MND LINES 	RHODE ISLAND ZONE FORECASTS
+NATIONAL WEATHER SERVICE TAUNTON MA
+357 AM EDT FRI OCT 17 1997
+BLANK LINE 	
+UGC CODE 	RIZ001>005-171900-
+Area Affected 	BRISTOL-EASTERN KENT-NORTHWEST PROVIDENCE-SOUTHEAST PROVIDENCE-WESTERN KENT- 
+
+INCLUDING THE CITIES OF...WOONSOCKEDT...PROVIDENCE...WARWICK
+Current Time/Date 	357 AM EDT FRI OCT 17 1997
+BLANK LINE 	
+TEXT 	.TODAY...MOSTLY SUNNY AND COOL. HIGH 55 TO 60. NORTH WIND 10 MPH. 
+
+.TONIGHT...MOSTLY CLEAR THEN INCREASING CLOUDINESS LATE. LOW RANGING
+FROM NEAR 40 IN THE URBAN CENTERS TO THE MID 30'S IN THE
+COUNTRYSIDE. LIGHT NORTH WIND.  
+
+.SATURDAY...MOSTLY CLOUDY. HIGH 55 TO 60.
+BLANK LINE 	
+	$$
+UGC CODE 	RIZ006-007-171900-
+MND 	NEWPORT-WASHINGTON...BLOCK ISLAND-INCLUDING THE CITY OF...NEWPORT 
+
+357 AM EDT FRI OCT 17 1997
+BLANK LINE 	
+TEXT 	.TODAY...MOSTLY SUNNY AND COOL. HIGH 55 TO 60. NORTH WIND 10 TO 15 MPH. 
+
+.TONIGHT...MOSTLY CLEAR WITH INCREASING CLOUDINESS LATE. LOW 40 TO 454. 
+
+.SATURDAY...MOSTLY CLOUDY. HIGH NEAR 55. 
+	$$
+
+C.12.4.3 New Universal Geographic Code (New UGC)
+
+C.12.4.3.1 New UGC Code Format and Elements
+
+In the new Universal Geographic Code (UGC), the basic format consists
+of 6 alphanumeric characters for the first code group, followed by a
+dash (-), and then followed either by the purge date/time in UTC (in
+the case where only one state and/or county applies), or, in the case
+of multiple states, counties, or parts thereof, one set of 4
+alphanumeric characters for each of these entities, followed by a dash
+(-), and finally by the purge date/time in UTC. Thus, as described
+above, in a single watch or warning, there may be multiple state IDS
+and multiple county FIPS codes. 
+
+C.12.4.3.2 Explanation of New UGC Elements
+
+The five elements that comprise the specific new UGC are as follows:
+
+SS is the State ID(The two alpha-character Federal designation for
+each state), or in the case of marine areas, it is the Ocean or Great
+Lake ID. 
+
+P is the Part of County indicator (1 - 9; 0 indicates the entire
+county). The Part of County designation will be unique for each
+county. In the case of marine areas, it is the part of the marine
+area. 
+
+NNN indicates the County FIPS#, as specified in FIPS PUB 55; Codes For
+Named Populated Places and Related Entities of the States of the
+United States, current volume. In the case of marine areas, it is the
+marine area number. 
+
+DDHHMM is the Purge of the watch or warning date/time (hour, minute) in UTC
+
+- is the County/Marine Area separator, and End of Code symbol
+
+C.12.4.3.3 New UGC Format - Geographic Examples
+
+Geographic examples of the new UGC format are:
+
+(a) Single State & County: ssPnnn-DDHHMM-
+
+(b) Single State, Multiple County: ssPnnn-Pnnn-Pnnn-DDHHMM-
+
+(c) Multiple State & Multiple County: ssPnnn-Pnnn-ssPnnn-Pnnn-DDHHMM-
+ 
+
+C.12.4.3.4 New UGC Format - Specific Examples
+
+Specific examples of the new UGC format are:
+
+(a) KS7167-120730-
+
+Part 7 of Russell County, Kansas, expires on the 12th day at 7:30 UTC.
+
+(b) MD0031-6033-222200-
+
+In the state of Maryland, all of Montgomery county, and part 6 of Prince Georges county, expires on the 22nd day, at 22:00 UTC.
+
+(c) IL5093-7169-IN8045-0055-050530-
+
+In the state of Illinois, part 5 of Kendall county and part 7 of
+Schuyler county; in the state of Indiana, part 8 of Fountain county
+and all of Greene county; expires on the 5th day, at 5:30 UTC. 
+ 
+C.12.4.3.5 New UGC Placement
+
+The structure of the communication message for Warnings and Watches
+will be the same and will dictate the placement of the UGC code
+line(s). The nominal structure is as follows with the UGC in bold: 
+
+Start of Message       ZCZC
+
+Comms Header        WMO Header
+
+Blank Line
+
+Product Header       MND Lines
+
+Blank Line
+
+UGC Line(s)        State (or Ocean/Great Lake),Part  of County, FIPS# (or  marine area)
+
+(Optional Plain         Names of Counties (or other areas).
+
+language descriptors)
+
+Text                    Text of Warning or Watch
+
+Blank Line
+
+End of Text         $$
+
+Blank Line
+
+UGC Line(s)     State, (or Ocean/Great Lake),Part of County, FIPS#(or marine area)
+
+(Optional Plain  language descriptors)
+ 
+ Text                Text of Warning or Watch
+
+Blank Line
+
+End of Text        $$
+
+Blank Line
+
+End of Message    NNNN
+ 
+ 
+
+For more details on the Message Header Description, see Section C.12.3.
+ 
+ 
+ 
+ 
+ 
+ 
+COMPARISON OF
+EXISTING UNIVERSAL GEOGRAPHIC CODE
+VERSUS
+NEW UNIVERSAL GEOGRAPHIC CODE
+ 
+
+EXISTING UGC NEW UGC
+UGC Element 	Element Description 		UGC Element 	Element Description
+SS 	State ID; two alpha characters, Federal designation
+SS 	State ID; two alpha characters, Federal designationor
+Ocean/Great Lake ID. 
+C 
+
+or 
+
+Z
+	C means that the following NNN is a County or 
+
+independent city. 
+
+Z means that the following NNN is an NWS Zone or part or all of a State
+		P 	Part of County (or marine area) Indicator (1-9), or 0 for entire county.
+NNN 	for C means County FIPS#; specified in FIPS Pub 55; 
+
+for Z means the number of the Zone or part or all of a State
+		NNN 	County FIPS#; specified in FIPS Pub 55 (or marine area number).
+DDHHMM 	Purge of watch/warning;day,hour,minute in UTC 		DDHHMM 	Purge of watch/warning;day,hour,minute in UTC
+- 	Code separator or end of address 		- 	County/Marine Area separator, and End of Code symbol
+ 
+C.12.4.4 Existing/New UGC Comparison
+
+1. The county (or politically independent city not in a county) is
+   represented by a Federal Information Processing Standards (FIPS)
+   number, issued by the Census Bureau. Each county/independent city
+   within a state has a unique FIPS number (001, 003, etc.) although
+   the numbers are repeated from state to state. 
+
+2. For the UGC code in Severe Local Storm Watches, the NNN will be set
+   to 000. For combined Severe Local Storm and Special Marine
+   Warnings, both the SSCNNN- and the SSZNNN- groups of the UGC will
+   be used. 

@@ -1,0 +1,70 @@
+
+<!-- BEGIN BLOCK1 -->
+<script language="javascript" type="text/javascript">
+<!--
+
+var HasAllZonesMessage = false;
+
+var VTECSegmentText = new Array();
+VTECSegmentText[0] = Array('\
+A TORNADO WATCH IS IN EFFECT UNTIL 7 PM.');
+VTECSegmentText[1] = Array('\
+A TORNADO WATCH IS IN EFFECT UNTIL 7 PM.');
+
+var VTECZoneListSegment = new Array();
+VTECZoneListSegment[0] = new Array("LAZ051", "LAZ052", "LAZ053", "LAZ054", "TXZ215");
+VTECZoneListSegment[1] = new Array("LAZ027", "LAZ030", "LAZ031", "LAZ041", "LAZ042", "TXZ180", "TXZ181", "TXZ182", "TXZ201", "TXZ216");
+
+function VTECGetText(zonenumber) { 
+  HasCaptionMessage = false;
+  CaptionMessage = DefaultCaptionMessage;
+
+  var text = "";
+  var numzonelists = VTECZoneListSegment.length;
+
+  var i, j;
+  for(i = 0; i < numzonelists; i++) {
+     var n = VTECZoneListSegment[i].length;
+     for(j = 0; j < n; j++) {
+      if(VTECZoneListSegment[i][j] == zonenumber) {
+        HasCaptionMessage = true;
+	text += VTECSegmentText[i];
+	break;
+      }
+    }
+  }
+
+  if(HasCaptionMessage) CaptionMessage = text;
+
+}
+
+// -->
+</script>
+
+<!-- END BLOCK1 -->
+<STRONG>
+<P>
+...TORNADOES...<BR>
+EXPECTED CONDITIONS AND IMPACTS FOR THE FOLLOWING AREAS:<BR>
+</P>
+</STRONG>
+<HR>
+<STRONG>
+<A NAME="LAZ051" ID="LAZ051"></A><A NAME="LAZ052" ID="LAZ052"></A><A NAME="LAZ053" ID="LAZ053"></A><A NAME="LAZ054" ID="LAZ054"></A><A NAME="TXZ215" ID="TXZ215"></A>CAMERON, IBERIA, JEFFERSON, ST. MARY, VERMILION
+</STRONG>
+<FONT COLOR="BLACK">
+<PRE>
+A TORNADO WATCH IS IN EFFECT UNTIL 7 PM.
+</PRE>
+</FONT>
+<HR>
+<STRONG>
+<A NAME="LAZ027" ID="LAZ027"></A><A NAME="LAZ030" ID="LAZ030"></A><A NAME="LAZ031" ID="LAZ031"></A><A NAME="LAZ041" ID="LAZ041"></A><A NAME="LAZ042" ID="LAZ042"></A><A NAME="TXZ180" ID="TXZ180"></A><A NAME="TXZ181" ID="TXZ181"></A><A NAME="TXZ182" ID="TXZ182"></A><A NAME="TXZ201" ID="TXZ201"></A><A NAME="TXZ216" ID="TXZ216"></A>ALLEN, BEAUREGARD, CALCASIEU, HARDIN, JASPER, JEFFERSON DAVIS, NEWTON, ORANGE, TYLER, VERNON
+</STRONG>
+<FONT COLOR="BLACK">
+<PRE>
+A TORNADO WATCH IS IN EFFECT UNTIL 7 PM.
+</PRE>
+</FONT>
+<HR>
+

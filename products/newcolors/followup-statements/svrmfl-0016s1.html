@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- ******************************* -->
+<!-- ******** Start of File ******** -->
+<!-- ******************************* -->
+<!-- *********************************************************** -->
+<!-- HTML File Name: SVRMFL-0016S1.html -->
+<!-- Supported Browsers: Internet Explorer, Firefox, Mozilla, Netscape -->
+<!-- Produced by: VTEC text product utility version 2.37 -->
+<!-- File Creation Date: meta data.created  -->
+<!-- Date Last Modified: meta data.reviewed -->
+<!-- *********************************************************** -->
+<!-- ************* Page Description and Details **************** -->
+<!-- *********************************************************** -->
+<!-- NWS MIAMI FL - Warning Polygon Map -->
+<!-- *********************************************************** -->
+<html>
+<head>
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>NWS MIAMI FL - Warning Polygon Map</title>
+<meta name="DC.title" content="NWS MIAMI FL - Warning Polygon Map">
+<meta name="DC.description" content="NWS MIAMI FL - Warning Polygon Map">
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service">
+<meta name="DC.publisher" content="NOAA's National Weather Service">
+<meta name="DC.contributor" content="National Weather Service">
+<meta name="DC.date.created" scheme="ISO8601" content="2008-06-02">
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2008-06-02">
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+<meta name="keywords" content="NWS MIAMI FL - Warning Polygon Map">
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php">
+<meta name="rating" content="General">
+<meta name="robots" content="index,follow">
+<meta name="Distribution" content="Global">
+<meta name="Revisit-after" content="1 month">
+<meta name="robots" content="all">
+</head>
+<body bgcolor="#ffffff" link="#0000ff" vlink="#800080">
+
+<!-- *********************************************************** -->
+<!-- ********* Start of JavaScript code for Google maps ******** -->
+<!-- *********************************************************** -->
+<!-- BEGIN BLOCK1 -->
+<script src="http://maps.google.com/maps?oe=utf-8&amp;file=api&amp;v=2&amp;key=ABQIAAAAIoZKb9JrajP0IwKLFr335hTsk_juWuwt_LNtOqByAr93uT9HuRTzovVKWJSi3TQGBPsWMWPyWdIQdg&amp;client=gme-noaa" type="text/javascript"></script>
+<script src="http://www.srh.noaa.gov/ridge/kml/gmap-wms_keith2.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function load() {
+var WMS_URL_GAL="http://gis.srh.noaa.gov/wmsconnector/com.esri.wms.Esrimap?ServiceName=Ridge";
+var rad = createWMSSpec(WMS_URL_GAL, "Radar", "Radar", "Radar", "default", "image/gif");
+var G_MAP_RIDGE_SPEC = createWMSOverlaySpec(G_MAP_TYPE, rad, "Radar", "Radar");
+var mapOpts = {
+ draggableCursor:"default",
+ draggingCursor:"default"
+}
+ if (GBrowserIsCompatible()) {
+  var map = new GMap2(document.getElementById("map"), mapOpts);
+  var baseIcon = new GIcon();
+      baseIcon.iconSize=new GSize(32,32);
+      baseIcon.iconAnchor=new GPoint(16,32);
+      baseIcon.infoWindowAnchor=new GPoint(16,0);
+  var blank = new GIcon(baseIcon, "http://maps.google.com/mapfiles/kml/pal2/icon15.png", null);
+  map.addMapType(G_MAP_TYPE);
+  map.addMapType(G_SATELLITE_TYPE);
+  map.addMapType(G_MAP_RIDGE_SPEC);
+  map.enableContinuousZoom();
+  map.enableDoubleClickZoom();
+  map.addControl(new GLargeMapControl());
+  map.addControl(new GMapTypeControl());
+  map.addControl(new GScaleControl());
+  map.addControl(new GOverviewMapControl());
+  map.setCenter(new GLatLng(26.4175, -80.47), 9, G_MAP_TYPE);
+ }
+ var polygon = new GPolygon([new GLatLng(26.26, -80.34), new GLatLng(26.33, -80.6), new GLatLng(26.49, -80.63), new GLatLng(26.59, -80.31), new GLatLng(26.26, -80.34)], "#ffff00", 5, .5, "#ffff00");
+ map.addOverlay(polygon);
+ var polyline = new GPolyline([new GLatLng(26.39, -80.43), new GLatLng(26.3902, -80.32)], "blue", 5, .5);
+ map.addOverlay(polyline);
+ var polyline2 = new GPolyline([new GLatLng(26.3902, -80.32), new GLatLng(26.4255, -80.3554)], "blue", 5, .5);
+ map.addOverlay(polyline2);
+ var polyline3 = new GPolyline([new GLatLng(26.3902, -80.32), new GLatLng(26.3548, -80.3553)], "blue", 5, .5);
+ map.addOverlay(polyline3);
+ var marker = new GMarker(new GLatLng(26.4175, -80.47), blank);
+ map.addOverlay(marker);
+ marker.openInfoWindowHtml("<span style='font:8pt courier;color:#ffff00;'><b>SEVERE WEATHER STATEMENT</b><br></span><span style='font:8pt courier'>Issued at 310 PM EDT SUN MAR 23 2008<br>Valid until 3:30 PM EDT<br></span><span style='font:8pt courier;color:green;'>Text appears below map</span>");
+ GEvent.addListener(marker, "click", function() {
+  marker.openInfoWindowHtml("<span style='font:8pt courier;color:#ffff00;'><b>SEVERE WEATHER STATEMENT</b><br></span><span style='font:8pt courier'>Issued at 310 PM EDT SUN MAR 23 2008<br>Valid until 3:30 PM EDT<br></span><span style='font:8pt courier;color:green;'>Text appears below map</span>");
+ });
+};
+//]]>
+</script>
+<!-- END BLOCK1 -->
+
+<!-- *********************************************************** -->
+<!-- ********** End of JavaScript code for Google maps ********* -->
+<!-- *********************************************************** -->
+
+
+<!-- Page Content Starts Here -->
+
+<font color="red"><H1>NOTICE: Product has expired</H1></font>
+
+<font color="red"><H2>Page posted for archiving and testing only</H2></font>
+<span style="font:8pt arial;color:red;"><b>DISCLAIMER:</b>&nbsp; The map portion of the following product is experimental and may not always be available.</span><br>
+<div id="map" style="width:525px;height:350px;border:solid 1px black;"></div>
+<!-- BEGIN BLOCK2 -->
+
+<!-- Load the Google map -->
+<script language="javascript">
+<!--
+window.onload = load();
+// -->
+</script>
+
+<!-- END BLOCK2 -->
+
+<font color="red"><H1>PRODUCT EXPIRED!!!</H1></font>
+<pre>SVSMFL
+
+NATIONAL WEATHER SERVICE MIAMI FL
+SEVERE WEATHER STATEMENT
+310 PM EDT SUN MAR 23 2008
+
+FLC011-099-231930-
+/O.CON.KMFL.SV.W.0016.000000T0000Z-080323T1930Z/
+PALM BEACH FL-BROWARD FL-
+310 PM EDT SUN MAR 23 2008
+
+...A SEVERE THUNDERSTORM WARNING REMAINS IN EFFECT UNTIL 330 PM EDT
+FOR NORTH CENTRAL BROWARD AND SOUTH CENTRAL PALM BEACH COUNTIES...
+
+AT 306 PM EDT...NATIONAL WEATHER SERVICE DOPPLER RADAR CONTINUED TO
+INDICATE A SEVERE THUNDERSTORM CAPABLE OF PRODUCING QUARTER SIZE
+HAIL...AND DAMAGING WINDS IN EXCESS OF 60 MPH. THIS STORM WAS LOCATED
+OVER SOUTH CENTRAL PALM BEACH COUNTY...MOVING EAST AT 25 MPH.
+
+SEVERE THUNDERSTORMS CAN ALSO PRODUCE TORNADOES WITH LITTLE OR NO
+ADVANCE WARNING. PREPARE TO MOVE TO A PLACE OF SAFETY IN AN INTERIOR
+ROOM IN THE LOWEST FLOOR OF YOUR HOUSE OR BUSINESS IF A TORNADO IS
+SPOTTED.
+
+
+</pre>
+
+<font color="red"><H1>NOTICE: Product has expired</H1></font>
+
+<font color="red"><H2>Page posted for archiving and testing only</H2></font>
+<!-- Page Content Ends Here -->
+
+</body>
+</html>
+<!-- *********************************************************** -->
+<!-- ******************************* -->
+<!-- ********* End of File ********* -->
+<!-- ******************************* -->

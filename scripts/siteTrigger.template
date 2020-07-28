@@ -1,0 +1,514 @@
+MIASPADIC  /home/apps/scripts/cp_to_xnow.csh MIASPADIC 
+MIAFWSMFL  /home/apps/scripts/send_SPOT.csh
+MIAZFPMFL  /home/apps/scripts/process_spn_wireless.csh ZFPMFL ZFPSPA
+MIACWFMFL  /home/apps/scripts/process_spn_wireless.csh CWFMFL CWFSPA
+MIABOYMIA  /awips/fxa/bin/preprocessBOY.pl MIABOYMIA
+MIAMOBP30  /awips/fxa/bin/preprocessMOB.pl MIAMOBP30
+IBASSMALL  /awips/fxa/bin/preprocessSSM.pl IBASSMALL
+MIACCFMFL  /home/apps/scripts/send_CCF.csh MIACCFMFL
+MIACCFMFL  /home/apps/scripts/cp_to_xnow.csh MIACCFMFL
+MIACCFWEB  /home/apps/scripts/send_CCF.csh MIACCFWEB
+MIACWFMFL  /home/CRS/generic/gulf.csh MIACWFMFL MIACWFOUT
+MIADSAAT   /home/CRS/TROPICAL/tropical.csh MIADSAAT MIATWOAMX
+MIAFWCFLL  /home/apps/scripts/cp_to_xnow.csh MIAFWCFLL 
+MIAFWCFMY  /home/apps/scripts/cp_to_xnow.csh MIAFWCFMY
+MIAFWCHST  /home/apps/scripts/cp_to_xnow.csh MIAFWCHST
+MIAFWCMIA  /home/apps/scripts/cp_to_xnow.csh MIAFWCMIA
+MIAFWCPBI  /home/apps/scripts/cp_to_xnow.csh MIAFWCPBI 
+MIAHLSSPN  /home/apps/scripts/send_HLSSPN.csh
+MIAMAVHWO  /data/local/guidance/copy_guidance.csh MIAMAVHWO
+MIAMAVHWO  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETHWO  /data/local/guidance/copy_guidance.csh MIAMETHWO
+MIAMETHWO  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXHWO  /data/local/guidance/copy_guidance.csh MIAMEXHWO
+MIAMEXHWO  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVFLL  /data/local/guidance/copy_guidance.csh MIAMAVFLL
+MIAMAVFLL  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETFLL  /data/local/guidance/copy_guidance.csh MIAMETFLL
+MIAMETFLL  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXFLL  /data/local/guidance/copy_guidance.csh MIAMEXFLL
+MIAMEXFLL  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCFLL  /data/local/guidance/copy_guidance.csh MIAFWCFLL
+MIAFWCFLL  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVRSW  /data/local/guidance/copy_guidance.csh MIAMAVRSW
+MIAMAVRSW  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETRSW  /data/local/guidance/copy_guidance.csh MIAMETRSW
+MIAMETRSW  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXRSW  /data/local/guidance/copy_guidance.csh MIAMEXRSW
+MIAMEXRSW  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVMIA  /data/local/guidance/copy_guidance.csh MIAMAVMIA
+MIAMAVMIA  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETMIA  /data/local/guidance/copy_guidance.csh MIAMETMIA
+MIAMETMIA  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXMIA  /data/local/guidance/copy_guidance.csh MIAMEXMIA
+MIAMEXMIA  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCMIA  /data/local/guidance/copy_guidance.csh MIAFWCMIA
+MIAFWCMIA  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVPBI  /data/local/guidance/copy_guidance.csh MIAMAVPBI
+MIAMAVPBI  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETPBI  /data/local/guidance/copy_guidance.csh MIAMETPBI
+MIAMETPBI  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXPBI  /data/local/guidance/copy_guidance.csh MIAMEXPBI
+MIAMEXPBI  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCPBI  /data/local/guidance/copy_guidance.csh MIAFWCPBI
+MIAFWCPBI  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVEYW  /data/local/guidance/copy_guidance.csh MIAMAVEYW
+MIAMAVEYW  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETEYW  /data/local/guidance/copy_guidance.csh MIAMETEYW
+MIAMETEYW  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXEYW  /data/local/guidance/copy_guidance.csh MIAMEXEYW
+MIAMEXEYW  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCEYW  /data/local/guidance/copy_guidance.csh MIAFWCEYW
+MIAFWCEYW  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVMTH  /data/local/guidance/copy_guidance.csh MIAMAVMTH
+MIAMAVMTH  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETMTH  /data/local/guidance/copy_guidance.csh MIAMETMTH
+MIAMETMTH  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXMTH  /data/local/guidance/copy_guidance.csh MIAMEXMTH
+MIAMEXMTH  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCMTH  /data/local/guidance/copy_guidance.csh MIAFWCMTH
+MIAFWCMTH  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVTMB  /data/local/guidance/copy_guidance.csh MIAMAVTMB
+MIAMAVTMB  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETTMB  /data/local/guidance/copy_guidance.csh MIAMETTMB
+MIAMETTMB  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXTMB  /data/local/guidance/copy_guidance.csh MIAMEXTMB
+MIAMEXTMB  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCTMB  /data/local/guidance/copy_guidance.csh MIAFWCTMB
+MIAFWCTMB  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVOPF  /data/local/guidance/copy_guidance.csh MIAMAVOPF
+MIAMAVOPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETOPF  /data/local/guidance/copy_guidance.csh MIAMETOPF
+MIAMETOPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXOPF  /data/local/guidance/copy_guidance.csh MIAMEXOPF
+MIAMEXOPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCOPF  /data/local/guidance/copy_guidance.csh MIAFWCOPF
+MIAFWCOPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVHST  /data/local/guidance/copy_guidance.csh MIAMAVHST
+MIAMAVHST  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETHST  /data/local/guidance/copy_guidance.csh MIAMETHST
+MIAMETHST  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXHST  /data/local/guidance/copy_guidance.csh MIAMEXHST
+MIAMEXHST  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCHST  /data/local/guidance/copy_guidance.csh MIAFWCHST
+MIAFWCHST  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVAPF  /data/local/guidance/copy_guidance.csh MIAMAVAPF
+MIAMAVAPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETAPF  /data/local/guidance/copy_guidance.csh MIAMETAPF
+MIAMETAPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXAPF  /data/local/guidance/copy_guidance.csh MIAMEXAPF
+MIAMEXAPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCAPF  /data/local/guidance/copy_guidance.csh MIAFWCAPF
+MIAFWCAPF  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVPMP  /data/local/guidance/copy_guidance.csh MIAMAVPMP
+MIAMAVPMP  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETPMP  /data/local/guidance/copy_guidance.csh MIAMETPMP
+MIAMETPMP  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXPMP  /data/local/guidance/copy_guidance.csh MIAMEXPMP
+MIAMEXPMP  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCPMP  /data/local/guidance/copy_guidance.csh MIAFWCPMP
+MIAFWCPMP  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVPGD  /data/local/guidance/copy_guidance.csh MIAMAVPGD
+MIAMAVPGD  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETPGD  /data/local/guidance/copy_guidance.csh MIAMETPGD
+MIAMETPGD  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXPGD  /data/local/guidance/copy_guidance.csh MIAMEXPGD
+MIAMEXPGD  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCPGD  /data/local/guidance/copy_guidance.csh MIAFWCPGD
+MIAFWCPGD  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVVRB  /data/local/guidance/copy_guidance.csh MIAMAVVRB
+MIAMAVVRB  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETVRB  /data/local/guidance/copy_guidance.csh MIAMETVRB
+MIAMETVRB  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXVRB  /data/local/guidance/copy_guidance.csh MIAMEXVRB
+MIAMEXVRB  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCVRB  /data/local/guidance/copy_guidance.csh MIAFWCVRB
+MIAFWCVRB  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVFXE  /data/local/guidance/copy_guidance.csh MIAMAVFXE
+MIAMAVFXE  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETFXE  /data/local/guidance/copy_guidance.csh MIAMETFXE
+MIAMETFXE  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXFXE  /data/local/guidance/copy_guidance.csh MIAMEXFXE
+MIAMEXFXE  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCFXE  /data/local/guidance/copy_guidance.csh MIAFWCFXE
+MIAFWCFXE  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVFPR  /data/local/guidance/copy_guidance.csh MIAMAVFPR
+MIAMAVFPR  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETFPR  /data/local/guidance/copy_guidance.csh MIAMETFPR
+MIAMETFPR  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXFPR  /data/local/guidance/copy_guidance.csh MIAMEXFPR
+MIAMEXFPR  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCFPR  /data/local/guidance/copy_guidance.csh MIAFWCFPR
+MIAFWCFPR  /awips/fxa/saveguidance/saveguidance.csh
+MIAMAVFMY  /data/local/guidance/copy_guidance.csh MIAMAVFMY
+MIAMAVFMY  /awips/fxa/saveguidance/saveguidance.csh
+MIAMETFMY  /data/local/guidance/copy_guidance.csh MIAMETFMY
+MIAMETFMY  /awips/fxa/saveguidance/saveguidance.csh
+MIAMEXFMY  /data/local/guidance/copy_guidance.csh MIAMEXFMY
+MIAMEXFMY  /awips/fxa/saveguidance/saveguidance.csh
+MIAFWCFMY  /data/local/guidance/copy_guidance.csh MIAFWCFMY
+MIAFWCFMY  /awips/fxa/saveguidance/saveguidance.csh
+MIAMCXLCL  /data/local/guidance/copy_guidance.csh MIAMCXLCL
+MIAMCXLCL  /awips/fxa/saveguidance/saveguidance.csh 
+MIAMCGLCL  /data/local/guidance/copy_guidance.csh MIAMCGLCL
+MIAMCGLCL  /awips/fxa/saveguidance/saveguidance.csh
+MIAPMDET4  /awips/fxa/saveguidance/saveguidance.csh
+MIAPMDET5  /awips/fxa/saveguidance/saveguidance.csh
+MIAPMDET6  /awips/fxa/saveguidance/saveguidance.csh
+MIAPMDET7  /awips/fxa/saveguidance/saveguidance.csh
+MIAPMDET8  /awips/fxa/saveguidance/saveguidance.csh
+MIAMMGSE1  /awips/fxa/splitMarineMOS/splitMarineMOS.csh
+MIAMMESE1  /awips/fxa/splitMarineMOS/splitMarineMOS.csh 
+MIAMTRAPF  /home/apps/obsplot/moveFile.tcl
+MIAMTRBCT  /home/apps/obsplot/moveFile.tcl
+MIAMTREGC  /awips/fxa/bin/preprocessMTR.pl MIAMTREGC
+MIAMTREGC  /home/apps/obsplot/moveFile.tcl
+MIAMTRFLL  /home/apps/obsplot/moveFile.tcl
+MIAMTRFLM  /home/apps/obsplot/moveFile.tcl
+MIAMTRFLM  /awips/fxa/bin/preprocessMTR.pl MIAMTRFLM
+MIAMTRFMY  /home/apps/obsplot/moveFile.tcl
+MIAMTRFPR  /home/apps/obsplot/moveFile.tcl
+MIAMTRFXE  /home/apps/obsplot/moveFile.tcl
+MIAMTRHST  /home/apps/obsplot/moveFile.tcl
+MIAMTRHWO  /home/apps/obsplot/moveFile.tcl
+MIAMTROBE  /home/apps/obsplot/moveFile.tcl
+MIAMTROCR  /awips/fxa/bin/preprocessMTR.pl MIAMTROCR
+MIAMTRMIA  /home/apps/obsplot/moveFile.tcl
+MIAMTRMLB  /home/apps/obsplot/moveFile.tcl
+MIAMTROPF  /home/apps/obsplot/moveFile.tcl
+MIAMTRPBI  /home/apps/obsplot/moveFile.tcl
+MIAMTRPGD  /home/apps/obsplot/moveFile.tcl
+MIAMTRPMP  /home/apps/obsplot/moveFile.tcl
+MIAMTRRSW  /home/apps/obsplot/moveFile.tcl
+MIAMTRSUA  /home/apps/obsplot/moveFile.tcl
+MIAMTRTMB  /home/apps/obsplot/moveFile.tcl
+MIAMTRVRB  /home/apps/obsplot/moveFile.tcl
+MIAMTRMIA  /awips/fxa/bin/preprocessMTR.pl MIAMTRMIA
+MIAMTRPBI  /awips/fxa/bin/preprocessMTR.pl MIAMTRPBI
+MIAMTRAPF  /awips/fxa/bin/preprocessMTR.pl MIAMTRAPF
+MIAMTRFXE  /awips/fxa/bin/preprocessMTR.pl MIAMTRFXE
+MIAMTRFLL  /awips/fxa/bin/preprocessMTR.pl MIAMTRFLL
+MIAMTRHWO  /awips/fxa/bin/preprocessMTR.pl MIAMTRHWO
+MIAMTROPF  /awips/fxa/bin/preprocessMTR.pl MIAMTROPF
+MIAMTRPMP  /awips/fxa/bin/preprocessMTR.pl MIAMTRPMP
+MIAMTRTMB  /awips/fxa/bin/preprocessMTR.pl MIAMTRTMB
+MIAMTRVIK  /awips/fxa/bin/preprocessMTR.pl MIAMTRVIK
+MIAMTRVIK  /home/apps/obsplot/moveFile.tcl
+MIAOFFNT4  /home/CRS/OFF/nwroff.csh MIAOFFNT4 MIA
+MIATCMAT1  /home/apps/scripts/GenerateCyclone/tcm_2ndfile.csh MIATCMAT1
+MIATCMAT2  /home/apps/scripts/GenerateCyclone/tcm_2ndfile.csh MIATCMAT2 
+MIATCMAT3  /home/apps/scripts/GenerateCyclone/tcm_2ndfile.csh MIATCMAT3 
+MIATCMAT4  /home/apps/scripts/GenerateCyclone/tcm_2ndfile.csh MIATCMAT4 
+MIATCMAT5  /home/apps/scripts/GenerateCyclone/tcm_2ndfile.csh MIATCMAT5 
+MIAUVICAC  /home/CRS/generic/sun.csh   MIAWRKSUM MIASUNAMX
+MIAUVICAC  /home/CRS/generic/sun.csh   MIAWRKSUN MIASUNAPF
+MIAUVICAC  /home/CRS/generic/sun.csh   MIAWRKSUW MIASUNWPB
+MIAUVICAC  /home/CRS/generic/sun.csh   MIAWRKSUB MIASUNBLG
+MIAWRKHUR  /home/CRS/generic/hurr.csh  MIAWRKHUR
+MIAWRKRWT  /home/CRS/RWT/nwrrwt.csh MIA
+MIAWRKSA1  /home/CRS/generic/syn.csh MIAWRKSA1 MIAWRKSA1
+MIAWRKSAF  /home/CRS/generic/postprocess_saf.csh
+MIAWRKSUM  /home/CRS/generic/sun.csh   MIAWRKSUM MIASUNAMX
+MIAWRKSUN  /home/CRS/generic/sun.csh   MIAWRKSUN MIASUNAPF
+MIAWRKSUW  /home/CRS/generic/sun.csh   MIAWRKSUW MIASUNWPB
+MIAWRKSUB  /home/CRS/generic/sun.csh   MIAWRKSUB MIASUNBLG
+MIAWRKTCM  /home/apps/scripts/GenerateCyclone/tcm_2ndfile.csh MIAWRKTCM
+MIAWRKTIM  /home/CRS/generic/tides.csh MIAWRKTIM MIATIDAMX
+MIAWRKTIN  /home/CRS/generic/tides.csh MIAWRKTIN MIATIDAPF
+MIAWRKTIW  /home/CRS/generic/tides.csh MIAWRKTIW MIATIDWPB
+MIAWRKTIH  /home/CRS/generic/tides.csh MIAWRKTIH MIATIDHST
+MIARVAMFL  /home/CRS/generic/lake.csh MIARVAMFL
+WSHNIMNAT  /awips/fxa/bin/adminmsg.csh WSHNIMNAT
+MIAMCXUSA  /awips/dev/coopmos/trimMCX.csh
+MIAMCGUSA  /awips/dev/coopmos/trimMCG.csh
+MIAMCXLCL  /awips/dev/coopmos/refMCX.csh
+MIAMCGLCL  /awips/dev/coopmos/refMCG.csh
+SJUCWFSJU  /home/apps/scripts/SJU/translator/readProduct.csh SJUCWFSJU
+SJUZFPPR   /home/apps/scripts/SJU/translator/readProduct.csh SJUZFPPR
+MIACWFMFL /home/CRS/CWF/nwrcwf.csh MIACWFMFL MIA
+MIATWOSPN /home/CRS/TWO.SPA/nwrtwo.csh MIATWOSPN TWO
+MIACFWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACFWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACFWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACFWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACFWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACWFMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACWFMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACWFEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACWFKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIACWFTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIADGTMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAESFMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFAMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFATBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFAMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFAEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFAKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFSTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFSMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFSEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFSKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFFWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLSTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLSMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLSEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLSKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAFLWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAHWOMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAMWSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAMWSMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAMWSEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAMWSKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAMWSTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANOWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANOWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANOWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANOWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANOWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANPWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANPWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANPWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANPWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIANPWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAPNSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIARVSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASMWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASMWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASMWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASMWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASMWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASPSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASPSMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASPSTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASPSEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASPSKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVRMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVRTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVRMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVREYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVRKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVSMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVSTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVSMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVSEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIASVSKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATORMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATORTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATORMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATOREYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATORKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSAMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSATBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSAMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSAEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSAKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATSWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATWOAT   /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWCNMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWCNTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWCNMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWCNEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWCNKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU0    /awips/adapt/NWRWAVES/nwrwaves.csh 
+MIAWOU1    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU2    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU3    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU4    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU5    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU6    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU7    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU8    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWOU9    /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWSWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWSWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWSWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWSWEYW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAWSWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAZFPMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAZFPMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAEWWMFL  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAEWWMLB  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAEWWTBW  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIAEWWKEY  /awips/adapt/NWRWAVES/nwrwaves.csh
+MIATCPAT1  /home/CRS/TROPICAL/tropical.csh MIATCPAT1 MIATCPAD1
+MIATCPAT2  /home/CRS/TROPICAL/tropical.csh MIATCPAT2 MIATCPAD2
+MIATCPAT3  /home/CRS/TROPICAL/tropical.csh MIATCPAT3 MIATCPAD3
+MIATCPAT4  /home/CRS/TROPICAL/tropical.csh MIATCPAT4 MIATCPAD4
+MIATCPAT5  /home/CRS/TROPICAL/tropical.csh MIATCPAT5 MIATCPAD5
+MIASEL0    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL1    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL2    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL3    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL4    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL5    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL6    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL7    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL8    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIASEL9    /awips/dev/localapps/warnSpot2.2/watchDecode.pl
+MIAFFWMFL  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFLWMFL  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASMWMFL  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVRMFL  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVSMFL  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIATORMFL  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFFWKEY  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFLWKEY  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASMWKEY  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVRKEY  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVSKEY  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIATORKEY  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFFWMLB  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFLWMLB  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASMWMLB  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVRMLB  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVSMLB  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIATORMLB  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFFWTBW  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAFLWTBW  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASMWTBW  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVRTBW  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIASVSTBW  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIATORTBW  /awips/dev/localapps/warnSpot2.2/warnDecode.pl
+MIAMTRPBI  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRPBI
+MIAMTRFLL  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRFLL
+MIAMTRHWO  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRHWO
+MIAMTRMIA  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRMIA
+MIAMTRTMB  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRTMB
+MIAMTRAPF  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRAPF
+MIAMTROPF  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTROPF
+MIAMTRPMP  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRPMP
+MIAMTRFXE  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRFXE
+MIAMTRHST  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRHST
+MIAMTRVIK  /data/local/Fcst_Monitor/MtrDcdr.csh MIAMTRVIK
+MIAMTRMIA  /home/apps/scripts/faa_ace-ids.csh MIAMTRMIA
+MIAMTRPBI  /home/apps/scripts/faa_ace-ids.csh MIAMTRPBI
+MIAMTRFLL  /home/apps/scripts/faa_ace-ids.csh MIAMTRFLL
+MIAMTRFXE  /home/apps/scripts/faa_ace-ids.csh MIAMTRFXE
+MIAMTROPF  /home/apps/scripts/faa_ace-ids.csh MIAMTROPF
+MIAMTRAPF  /home/apps/scripts/faa_ace-ids.csh MIAMTRAPF
+MIAMTRHWO  /home/apps/scripts/faa_ace-ids.csh MIAMTRHWO
+MIAMTRHST  /home/apps/scripts/faa_ace-ids.csh MIAMTRHST
+MIAMTRPMP  /home/apps/scripts/faa_ace-ids.csh MIAMTRPMP
+MIAMTRTMB  /home/apps/scripts/faa_ace-ids.csh MIAMTRTMB
+MIASVRMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASVRMFL
+MIATORMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATORMFL
+MIAEWWMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAEWWMFL
+MIAFFWMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFFWMFL
+MIASPSMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASPSMFL
+MIASVSMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASVSMFL
+MIAFFSMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFFSMFL
+MIAFLSMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFLSMFL
+MIASMWMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASMWMFL
+MIAMWSMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAMWSMFL
+MIAWCNMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAWCNMFL
+MIATCVAT1  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATCVAT1
+MIATCVAT2  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATCVAT2
+MIATCVAT3  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATCVAT3
+MIATCVAT4  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATCVAT4
+MIATCVAT5  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATCVAT5
+MIANPWMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIANPWMFL
+MIAHLSMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAHLSMFL
+MIAWSWMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAWSWMFL
+MIAFFAMFL  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFFAMFL
+MIASVRKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASVRKEY
+MIATORKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIATORKEY
+MIAEWWKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAEWWKEY
+MIAFFWKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFFWKEY
+MIASPSKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASPSKEY
+MIASVSKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASVSKEY
+MIAFFSKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFFSKEY
+MIAFLSKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFLSKEY
+MIASMWKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIASMWKEY
+MIAMWSKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAMWSKEY
+MIAWCNKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAWCNKEY
+MIANPWKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIANPWKEY
+MIAHLSKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAHLSKEY
+MIAFFAKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAFFAKEY
+MIAWSWKEY  /awips/dev/localapps/Email_Warnings/decode_sts_for_email.csh MIAWSWKEY
+MIAWRKTAF  /home/apps/scripts/archive_local_text.csh MIAWRKTAF
+MIAMCXLCL  /home/apps/scripts/archive_local_text.csh MIAMCXLCL
+MIAMCGLCL  /home/apps/scripts/archive_local_text.csh MIAMCGLCL
+MIABOYDAT  /home/apps/scripts/archive_local_text.csh MIABOYDAT
+MIAMTRVIK  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRVIK
+MIAMTRFLM  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRFLM
+MIAMTREGC  /home/apps/scripts/feed_www_ldm_text.csh MIAMTREGC
+MIAMTRAPF  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRAPF
+MIAMTREYW  /home/apps/scripts/feed_www_ldm_text.csh MIAMTREYW
+MIAMTRFLL  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRFLL
+MIAMTRFMY  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRFMY
+MIAMTRFXE  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRFXE
+MIAMTRHWO  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRHWO
+MIAMTRMIA  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRMIA
+MIAMTROPF  /home/apps/scripts/feed_www_ldm_text.csh MIAMTROPF
+MIAMTRPBI  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRPBI
+MIAMTRPMP  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRPMP
+BHMMTRAAF  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRAAF
+BHMMTRCEW  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRCEW
+BHMMTRDTS  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRDTS
+BHMMTRMAI  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRMAI
+BHMMTRNPA  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRNPA
+BHMMTRPFN  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRPFN
+BHMMTRPNS  /home/apps/scripts/feed_www_ldm_text.csh BHMMTRPNS
+MIAMTR40J  /home/apps/scripts/feed_www_ldm_text.csh MIAMTR40J
+MIAMTRBKV  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRBKV
+MIAMTRCTY  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRCTY
+MIAMTRDAB  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRDAB
+MIAMTRFPR  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRFPR
+MIAMTRGIF  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRGIF
+MIAMTRGNV  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRGNV
+MIAMTRJAX  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRJAX
+MIAMTRLEE  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRLEE
+MIAMTRMCO  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRMCO
+MIAMTRMTH  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRMTH
+MIAMTRNRB  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRNRB
+MIAMTRORL  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRORL
+MIAMTRPGD  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRPGD
+MIAMTRPIE  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRPIE
+MIAMTRRSW  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRRSW
+MIAMTRSFB  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRSFB
+MIAMTRSPG  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRSPG
+MIAMTRSRQ  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRSRQ
+MIAMTRTLH  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRTLH
+MIAMTRTMB  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRTMB
+MIAMTRTPA  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRTPA
+MIAMTRVRB  /home/apps/scripts/feed_www_ldm_text.csh MIAMTRVRB
+MIAWCNMFL  /home/apps/scripts/update_www_ldm_database.csh MIAWCNMFL
+MIAWCNMFL  /home/apps/scripts/update_www_ldm_database.csh MIAMWWMFL
+MIACEMMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIACEMMFL
+MIACFWMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIACFWMFL
+MIACWFMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIACWFMFL
+MIAFFAMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIAFFAMFL
+MIAFFSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAFFSMFL
+MIAFFWMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAFFWMFL
+MIAFLSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAFLSMFL
+MIAFLWMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAFLWMFL
+MIAHLSMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIAHLSMFL
+MIAHWOMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAHWOMFL
+MIAMWSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAMWSMFL
+MIANOWMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIANOWMFL
+MIANPWMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIANPWMFL
+MIAPNSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIAPNSMFL
+MIARFWMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIARFWMFL
+MIARVSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIARVSMFL
+MIASMWMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIASMWMFL
+MIASPSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIASPSMFL
+MIASVRMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIASVRMFL
+MIASVSMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIASVSMFL
+MIATORMFL  /data/local/web/vtec_util/scripts/WWA_trigger.csh MIATORMFL
+MIAWCNMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIAWCNMFL
+MIAWSWMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIAWSWMFL
+MIAMWWMFL  /data/local/web/vtec_util/scripts/WWA_trigger_noarch.csh MIAMWWMFL

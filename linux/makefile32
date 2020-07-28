@@ -1,0 +1,8 @@
+all:
+	make 64BITCFG=0
+
+install:
+	make install 64BITCFG=0
+
+clean:
+	make clean 64BITCFG=0
